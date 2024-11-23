@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css"></head>
+<body>
+<div class="container">
+    <h2 class="text-center">Admin Dashboard</h2>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Form Name</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>User Profiles</td>
+
+
+            <td>
+                <a th:href="@{/profileList}" class="btn btn-primary">View</a>
+            </td>
+        </tr>
+        <tr>
+
+
+            <td>Contact Info</td>
+
+            <td>
+                <a th:href="@{/profileContact}" class="btn btn-primary">View</a>
+            </td>
+        </tr>
+        <tr>
+
+
+            <td>Survey </td>
+
+            <td>
+                <a th:href="@{/profileSurvey}" class="btn btn-primary">View</a>
+            </td>
+        </tr>
+        <tr>
+            <td>Subscription</td>
+
+
+            <td>
+                <a th:href="@{/profileSubscription}" class="btn btn-primary">View</a>
+            </td>
+        </tr>
+        <tr>
+            <td>Profile Update</td>
+
+
+            <td>
+                <a th:href="@{/profileUpdate}" class="btn btn-primary">View</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

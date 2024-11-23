@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+
+  <!-- Link to the external CSS file -->
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+  <h1>Survey Form</h1>
+</header>
+
+<!-- Survey Form Section -->
+<form action="/submit-survey" method="post" enctype="multipart/form-data">
+  <div class="card-header">
+    <label for="feedback">Feedback:</label><br>
+    <textarea name="feedback" id="feedback" rows="4" cols="50" required></textarea><br><br>
+  </div>
+
+  <div class="card-body">
+    <label>Preferences:</label><br>
+    <input type="checkbox" name="preferences" value="Option 1" id="option1"> Option 1<br>
+    <input type="checkbox" name="preferences" value="Option 2" id="option2"> Option 2<br>
+    <input type="checkbox" name="preferences" value="Option 3" id="option3"> Option 3<br><br>
+
+    <label for="additionalDocs">Upload Additional Documents:</label><br>
+    <input type="file" name="additionalDocs" id="additionalDocs"><br><br>
+
+    <button type="submit">Submit Survey</button>
+  </div>
+</form>
+
+</body>
+</html>
